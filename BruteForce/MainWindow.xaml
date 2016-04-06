@@ -5,9 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BruteForce"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Passwort ermitteln" Height="350" Width="525" ResizeMode="NoResize">
     <Grid>
         <Label x:Name="label" Content="Brute Force Demo" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Canvas HorizontalAlignment="Left" Height="152" Margin="19,63,0,0" VerticalAlignment="Top" Width="201">
+            <RadioButton x:Name="rdoZahlen" Content="Ziffern" Canvas.Left="22" Canvas.Top="17" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton x:Name="rdoKleinBuchstaben" Content="KleinBuchstaben" Canvas.Left="22" Canvas.Top="37" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="-0.122,0.274"/>
+            <RadioButton x:Name="rdoGrossBuchstaben" Content="GroßBuchstaben" Canvas.Left="22" Canvas.Top="57" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton x:Name="rdoBuchstabenZiffern" Content="Buchstaben/Ziffern" Canvas.Left="22" Canvas.Top="77" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <RadioButton x:Name="rdoBuchstabenZiffernSonder" Content="Buchstaben/Ziffern/Sonder" Canvas.Left="22" Canvas.Top="97" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+        <TextBox x:Name="txtVorgabe" HorizontalAlignment="Left" Height="23" Margin="266,69,0,0" TextWrapping="Wrap" Text="Wert" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1" Content="Vorgabe" HorizontalAlignment="Left" Margin="411,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.511,0.68"/>
+        <TextBox x:Name="txtStart" HorizontalAlignment="Left" Height="23" Margin="266,98,0,0" TextWrapping="Wrap" Text="Start" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblStart" Content="Startwert" HorizontalAlignment="Left" Margin="411,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.511,0.68"/>
+        <TextBox x:Name="txtEnde" HorizontalAlignment="Left" Height="23" Margin="266,128,0,0" TextWrapping="Wrap" Text="Ende" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblStart_Copy" Content="Endwert" HorizontalAlignment="Left" Margin="411,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.511,0.68"/>
+        <TextBox x:Name="txtZaehler" HorizontalAlignment="Left" Height="23" Margin="266,175,0,0" TextWrapping="Wrap" Text="Zähler" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="6.313,12.861" Margin="411,178,0,0"/>
 
     </Grid>
 </Window>
